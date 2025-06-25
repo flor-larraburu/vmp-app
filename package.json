@@ -1,0 +1,17 @@
+{
+  "name": "tfg-vmp-backend",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "start:api-gateway": "npm run start --workspace=apps/api-gateway",
+    "start:ingestion": "npm run start --workspace=apps/ingestion-service",
+    "start:analytics": "npm run start --workspace=apps/analytics-service",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  }
+}
