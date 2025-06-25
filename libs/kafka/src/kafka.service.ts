@@ -1,4 +1,3 @@
-// libs/kafka/src/kafka.service.ts
 import { Injectable } from '@nestjs/common';
 import { Kafka } from 'kafkajs';
 
